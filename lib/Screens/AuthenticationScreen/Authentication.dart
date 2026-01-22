@@ -18,12 +18,12 @@ class AuthenticationScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SizedBox(height: 60),
+                SizedBox(height: 60.h),
                 Text(
                   "TradeJournal AI",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
-                SizedBox(height: 20),
+                SizedBox(height: 20.h),
                 Text(
                   "Welcome Back",
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
@@ -32,15 +32,15 @@ class AuthenticationScreen extends StatelessWidget {
                   "Access your intelligent trading dashboard.",
                   style: TextStyle(fontSize: 16),
                 ),
-                SizedBox(height: 30),
+                SizedBox(height: 30.h),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 24.w),
+                  padding: EdgeInsets.symmetric(horizontal: 5.w),
                   alignment: Alignment.centerLeft,
                   child: Text("Email Address", style: TextStyle(fontSize: 16)),
                 ),
                 SizedBox(height: 8),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 24.w),
+                  padding: EdgeInsets.symmetric(horizontal: 5.w),
                   child: TextField(
                     decoration: InputDecoration(
                       hintText: "trader@example.com",
@@ -58,12 +58,12 @@ class AuthenticationScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 18),
+                SizedBox(height: 18.h),
 
                 if (ctrl.hasEmailSent) ...[
                   Container(
                     alignment: Alignment.centerLeft,
-                    margin: EdgeInsets.symmetric(horizontal: 24.w),
+                    margin: EdgeInsets.symmetric(horizontal: 5.w),
 
                     child: Text("Enter OTP", style: TextStyle(fontSize: 16)),
                   ),
@@ -85,7 +85,7 @@ class AuthenticationScreen extends StatelessWidget {
                   child: Container(
                     width: double.infinity,
 
-                    margin: EdgeInsets.symmetric(horizontal: 24.w),
+                    margin: EdgeInsets.symmetric(horizontal: 5.w),
 
                     height: 48.h,
                     decoration: BoxDecoration(
